@@ -1,0 +1,17 @@
+void main(){
+    int p,i,n;
+    int a[4] = {1,2,3};
+    printf("Enter position of new No.");
+    scanf("%d",&p);
+    printf("Enter new No.");
+    scanf("%d",&n);
+    for (i=4;i>=p;i--){
+        a[i]=a[i-1];
+    }
+    a[p-1]= n;
+    
+    for(i=0;i<=3;i++){
+        printf(" %d ",a[i]);
+    }
+    
+}

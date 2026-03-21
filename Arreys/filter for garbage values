@@ -1,0 +1,22 @@
+void main(){
+    int p,i,n;
+    int a[4] = {1,2,3};
+    printf("Enter position of deleting No.");
+    scanf("%d",&p);
+
+
+    for (i=p-1;i<=3;i++){
+        a[i]=a[i+1];
+    }
+
+//adding filter 
+    for(i=0;i<=3;i++){
+       if (a[i]>1000000 ){
+           a[i]=0;
+       }
+    }
+// printing no.
+    for(i=0;i<=3;i++){
+        printf(" %d ",a[i]);
+    }
+} 
