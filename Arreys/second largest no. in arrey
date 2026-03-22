@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(){
+    int a[]={67,84,96,118,92,22,122,89,4};
+    int n= sizeof(a)/sizeof(a[0]);
+    //finding max int
+    int max = a[0];
+
+    for(int i = 1; i <=n; i++) {
+        if(a[i] > max) {
+            max = a[i];
+        }
+    }
+    // now finding second max int 
+    int smax=a[0];
+    if (smax==max){
+        smax=a[1];
+    }
+    
+    for(int i = 1; i <=n; i++) {
+        if (a[i] != max && a[i]>smax){
+            smax=a[i];
+        
+        }
+    }
+    printf ("Largest no. is = %d \n Second Largest = %d \n ", max,smax);
+}

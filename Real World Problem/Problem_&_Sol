@@ -1,0 +1,28 @@
+/*Q. A library charges a fine for every book returned late. For the first 5 days the fine is 50
+paisa, for 6-10 days fine is one rupee and above 10 days fine is 5 rupees. If you return
+the book after 30 days your membership will be canceled. WAP to accept no. of days the
+member is late to return the book and display the fine or appropriate message*/
+
+//Ans
+//# include <stdio.h>
+int main(){
+    int d ;
+    float price;
+    price=0 ;
+    printf("Enter No. of days= ");
+    scanf("%d", &d);
+    
+        if ((d>= 1)&&(d<=5))
+            price=price+0.50;
+            
+        else if ((d>= 6)&&(d<11))
+            price=price+1.00;
+            
+         else if ((d>= 11)&&(d<=30))
+            price=price+5.00 ;
+            
+         else printf("Membership Cancelled with  ");
+         
+    printf("Fine= %f", price);
+
+}

@@ -1,0 +1,36 @@
+// Q.To find greatest of 3 integers using two methods (a) if-else and (b) ternary operator.
+
+
+// Ans  (a)
+ #include <stdio.h>
+
+ int main(){
+     int a,b,c;
+     printf("Entre 3 no.");
+     scanf ("%d %d %d",&a,&b,&c);
+
+     if (a>b){
+        if (a>c) printf("a i.e %d is greatest", a);
+
+        else printf("c i.e %d is greatest", c);
+     }
+     else if  (b>c) printf("b i.e %d is greatest", b);
+
+     else printf("c i.e %d is greatest", c);
+
+ }
+ 
+
+//Ans (b)
+
+
+void main(){
+     int a,b,c, max;
+     printf("Entre 3 no.");
+     scanf ("%d %d %d",&a,&b,&c);
+
+     max= (a>b)? ((a>c)?a:c) : ((b>c)?b:c) ;
+
+     printf("Greatest int = %d",max);
+
+}

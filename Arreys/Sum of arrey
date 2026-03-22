@@ -1,4 +1,5 @@
-void main(){
+#include <stdio.h>
+int main(){
     int p,i,n;
     int a[4] = {1,2,3};
     printf("Enter position of new No.");

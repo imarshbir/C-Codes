@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct Node {
+    int data;
+    struct Node* next;
+}Node;
+
+Node* root=NULL;
+
+void createNode(int a){
+    Node* ptr= (Node*)malloc(sizeof(Node));
+    ptr->data = a;
+    ptr->next=NULL;
+    
+    Node*r=root;
+    // inserting the first Node
+    if (root==NULL ){
+        root = ptr;
+        return ;
+    }
+    if (r->next == NULL){root->next = ptr ;}
+    
+   // adding a node betweenn two nodes
+   while(r->next){
+       if ((r->data <a)&& ((r->next)->data > a )){
+           ptr->next= r->next ;
+           r->next =ptr;
+           return;
+       }
+       r=r->next;
+   }
+   r->next=ptr;
+}
+
+void printList(){
+    Node *r =root;
+    printf("\n Root=%d",root);
+    while(r!=NULL){
+    printf("\n Data=%d , next=%d",r->data, r->next);
+    r=r->next;
+    
+    }
+}
+
+int main (){
+    printf("Node Creation :") ;
+    
+    createNode(10);
+    createNode(20);
+    createNode(15);
+    
+    printList();
+}

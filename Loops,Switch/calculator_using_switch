@@ -1,0 +1,41 @@
+//#include <stdio.h>
+void main(){
+ int a,b,res;
+ char op;
+ printf("Enter First no. ="); 
+ scanf("%d",&a);
+ printf("\nEnter operator(+,-,/,*,%) ="); 
+ scanf(" %c",&op);
+ printf("\nEnter Second no.="); 
+ scanf("%d",&b);
+ //printf("%d,%c,%d",a,b,c);
+ 
+ switch(op){
+     case '+':
+        res=a+b;
+        printf("Sum = %d",res);
+        break;
+        
+     case'-':
+        res=a-b;
+        printf("Difference= %d",res);
+        break;
+        
+     case '*':
+        res=a*b;
+        printf("Product = %d",res);
+        break;
+        
+    case '/':
+        res=a/b;
+        printf("Division = %d",res);
+        break;
+        
+    case '%':
+        res=a%b;
+        printf("Modulus = %d",res);
+        break;
+        
+    default: printf("Enter Valid Operator");
+ }
+}
