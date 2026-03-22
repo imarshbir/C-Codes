@@ -24,5 +24,7 @@ int main(){
          else printf("Membership Cancelled with  ");
          
     printf("Fine= %f", price);
+    
+    return 0;
 
 }
