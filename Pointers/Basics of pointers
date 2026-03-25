@@ -1,0 +1,25 @@
+int main()
+{
+    int a;float b=19.67;char c='a';
+    
+    int *int_ptr;
+    int_ptr=&a;
+    printf("int - %d \n",int_ptr);
+    
+    printf("unsigned - %u \n",int_ptr);
+    printf("pointer - %p \n",int_ptr);
+    printf("hexadecimal - %x \n",int_ptr);
+    
+    
+    
+    
+    float *float_ptr;
+    float_ptr=&b;    
+    printf("float - %d \n",float_ptr);
+    
+    char * char_ptr;
+    char_ptr=&c;
+    printf("char - %d",char_ptr);
+
+    return 0;
+}

@@ -1,0 +1,28 @@
+int *addition_array(int *arr, int size , int addby){
+     int result[size];
+     for (int i=0 ;i<size;i++){
+         result[i]= arr[i]+addby;
+     }
+     return result;
+ }
+
+void main(){
+    int size,addby,*ptr,*arr;
+    printf ("Entre size of array-  ");
+    scanf("%d ",&size );
+    int num[size];
+    printf("\n Enter th array - ");
+    for (int i=0;i<size;i++){
+        scanf("%d",&num[i]);
+    }
+    printf (" \n Entre addition no- ");
+    scanf("%d ",&addby);
+    
+    ptr=addition_array(num,size,addby);
+    
+    printf ("Added array - ");
+    for(int i=0;i<size;i++){
+        printf("%d", *(ptr+i));
+    }
+    
+}

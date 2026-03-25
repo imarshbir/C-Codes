@@ -24,4 +24,5 @@ int main(){
         }
     }
     printf ("Largest no. is = %d \n Second Largest = %d \n ", max,smax);
+    return 0;
 }
