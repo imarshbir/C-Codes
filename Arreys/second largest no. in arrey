@@ -1,3 +1,5 @@
+// Find the second largest element in arrey 
+
 #include <stdio.h>
 
 int main(){
