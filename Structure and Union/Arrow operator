@@ -1,0 +1,22 @@
+#include<stdio.h>
+struct Address{
+    char state[20];
+    int pincode;
+};
+
+struct Student {
+    char name[20];
+    int roll ;
+    struct Address addr;
+};
+
+int main(){
+    struct Student s1={"Arshbir", 20,{"Chandigarh",160072}};
+    
+    struct Student *ptr;
+    ptr=&s1;
+    
+    printf("Roll:- %d , name-%s \n", ptr->roll, ptr->name);
+    //printf("state:- %s , pincode-%d \n", ptr->s1->state, ptr->s1->pincode);
+
+}

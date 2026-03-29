@@ -1,0 +1,22 @@
+//Example: Student + Address
+#include<stdio.h>
+struct Address{
+    char state[20];
+    int pincode;
+};
+
+struct Student {
+    char name[20];
+    int roll ;
+    struct Address addr;
+};
+
+int main(){
+    
+    struct Student s1={"Arshbir", 20,{"Chandigarh",160072}};
+    
+    printf("Name= %s \n", s1.name);
+    printf("ROll no.= %d \n", s1.roll);
+    printf("State= %s \n", s1.addr.state);
+    printf("Pincode= %d \n", s1.addr.pincode);
+}
